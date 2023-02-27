@@ -17,26 +17,15 @@
 | t5 v1.1 small | 77 M  | [link](https://huggingface.co/hyunwoo3235/t5-v1_1-base-ko)  |
 | t5 v1.1 base  | 250 M | [link](https://huggingface.co/hyunwoo3235/t5-v1_1-base-ko)  |
 
-## Usage
+## Documentation
 
-### whisper
+각각의 모델에 대한 자세한 설명은 아래 링크를 참고해주세요.
 
-```python
-from transformers import WhisperProcessor, WhisperForConditionalGeneration
-
-processor = WhisperProcessor.from_pretrained("hyunwoo3235/whisper-tiny.ko")
-model = WhisperForConditionalGeneration.from_pretrained("hyunwoo3235/whisper-tiny.ko")
-```
-
-### t5
-
-```python
-from transformers import T5Tokenizer, T5ForConditionalGeneration
-
-tokenizer = T5Tokenizer.from_pretrained("hyunwoo3235/t5-v1_1-base-ko")
-model = T5ForConditionalGeneration.from_pretrained("hyunwoo3235/t5-v1_1-base-ko")
-```
+* [whisper](docs/whisper.md)
+* [t5](docs/t5.md)
 
 ## Acknowledgments
 
 * Research supported with Cloud TPUs from Google's TPU Research Cloud (TRC)
+* 일부 모델은 과학기술정보통신부의 재원으로 한국지능정보사회진흥원의 지원을 받아 구축된 데이터셋을 활용하여 개발되었습니다.
+  모델 개발에 활용된 데이터는 모델 상세 페이지에서 확인하실 수 있으며 AI 허브(aihub.or.kr)에서 다운로드 받으실 수 있습니다.
